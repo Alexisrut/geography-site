@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.anychart.com/releases/8.12.0/js/anychart-base.min.js" type="text/javascript"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+    <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.anychart.com/themes/2.0.0/dark_blue.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class = "header_container">
+            <div class = "header_titles_center">
+                <h1 class = "header_title opacity_wrapper">Сербия и Турция</h1>
+                <h3 class = "header_subtitle opacity_wrapper">Анализ населения</h3></div>
+            </div>
+    </header>
+    <main>
+        <div class="preloader3">
+          <h1 class = "preloader-text3">Надеюсь вам понравится!</h1>
+        </div>
+        <script>
+          var preloader3 = document.querySelector('.preloader3');
+          setTimeout(function() {
+            preloader3.style.display = 'none';
+          }, 6500);
+        </script>
+        <div class="preloader2">
+          <h1 class = "preloader-text2">Я очень старался...</h1>
+        </div>
+        <script>
+            var preloader2 = document.querySelector('.preloader2');
+            setTimeout(function() {
+              preloader2.style.display = 'none';
+            }, 4000); // Измените значение на нужное вам время в миллисекундах (в данном примере — 5 секунд
+        </script>
+        <div class="preloader1">
+          <h1 class = "preloader-text1">Здравствуйте!</h1>
+        </div>
+      
+        <script>
+            var preloader1 = document.querySelector('.preloader1');
+            setTimeout(function() {
+              preloader1.style.display = 'none';
+            }, 1500);
+        </script>
+        <!-- Ниже Центральная линия -->
+        <div class="vl"></div>
+        <!-- Ниже Турция -->
+        <div class = "Turkey-container">
+            <h2 class = "main-title opacity_wrapper">Турция</h2>
+
+            <h3 class = "section-title opacity_wrapper">Рождаемость</h3>
+            <h4 class = "section-value opacity_wrapper">4.173 человека в день</h4>
+
+            <h3 class = "section-title opacity_wrapper">Смертность</h3>
+            <h4 class = "section-value opacity_wrapper">1,408 человек в день</h4>
+
+            <h3 class = "section-title opacity_wrapper">Изменение численности населения</h3>
+            <div style="width: 100%; height: 150px;" class = "opacity_wrapper" id = "turkish-born-container"></div>
+
+            <h3 class = "section-title opacity_wrapper">Естественный прирост</h3>
+            <h4 class = "section-value opacity_wrapper">1.017.788 человек</h4>
+            <p class = "discription opacity_wrapper">В среднем население турции растёт, рождаемость превышает смертноть в два-три раза. Это может быть обусловено культурными убеждениями в семейные ценности, улучшением экономического положения, а также государственной политикой по поощрению рождаемости.</p>
+
+            <h3 class = "section-title opacity_wrapper">Миграционный прирост</h3>
+            <h4 class = "section-value opacity_wrapper">467.442 человек</h4>
+            <p class = "discription opacity_wrapper">Положительный миграционный прирост в Турции может быть обусловлен экономическими возможностями страны, поиском улучшенного качества жизни в Турции, политической стабильностью, образовательными возможностями и т.п. Также Турция проводит положительную миграционную политику.</p>
+
+            <h3 class = "section-title opacity_wrapper">Основные направления миграции в страну</h3>
+            <div class = "opacity_wrapper turkish-migration-increase-in-container"></div>
+            <p class = "discription opacity_wrapper">Люди мигрируют в Турцию из-за разнообразных факторов. Экономические возможности, предпринимательство и инвестирование в динамичную экономику являются привлекательными моментами. Относительная стабильность и безопасность страны привлекают тех, 
+              кто ищет убежище от конфликтов. Сфера туризма, образовательные программы, исторические и культурные связи также играют роль в решении мигрировать. Географическое положение, 
+              на стыке Европы и Азии, дополнительно подчеркивает привлекательность Турции для различных групп мигрантов.</p>
+
+            <h3 class = "section-title opacity_wrapper">Основные направления миграции из страны</h3>
+            <p class = "discription opacity_wrapper">Основными направлениями для турецких иммигрантов стали страны Европейского Союза и Объединенные Арабские Эмираты. Турция идет сразу за Китаем и Индией в списке, 
+              но по соотношению численности населения и миграции лидирует Турция. Наблюдается отток светского населения, поскольку влияние религиозного национализма становится все более жестким. Также по словам президента 
+              Турции Эрдогана, Многие интеллектуалы с высшим образованием предпочитают продолжать свою карьеру в Европе и на Западе, в целом.</p>
+
+            <h3 class = "section-title opacity_wrapper">Население Турции к 2050 г.</h3>
+            <h4 class = "section-value opacity_wrapper">95,829,258 человек(6,5%)</h4>
+            
+            <h3 class = "section-title opacity_wrapper">Демографическая пирамида</h3>
+            <div id='turkish-age-container' class = "opacity_wrapper" style="width: 100%; height: 250px;"></div>
+            <p class = "discription opacity_wrapper">В Турции преобладает рабочее население. Также люде меньше 15 лет значительно больше людей больше 65 лет. В количестве мужчин и женщин наблюдается почти абсолютное равенство.</p>
+
+            <div class = "etnos">
+              <h3 class = "section-title opacity_wrapper">Этнос</h3>
+              <div id="narod_turkish" class = "opacity_wrapper" style="width: 100%; height: 250px;"></div>
+              <p class = "discription opacity_wrapper">Турки - основной народ Турции. Предки турок — огузы, вторглись в центральную часть современной Турции в середине XI века из Огузского государства, 
+                находившегося на территории современного Казахстана. 29 мая 1453 года турки захватили у греков Константинополь (ныне Стамбул). Второй по многочисленности народ - Курды. Курды -  коренной ираноязычный народ Турции. Проживают они в больших количествах по всей территории страны, а в абсолютном большинстве на востоке.</p>
+              <div class = "Turkey-etnos-container">
+                  <div id="language_turkish" class = "opacity_wrapper" style="width: 50%; height: 250px;"></div>
+                  <div id="relig_turkish" class = "opacity_wrapper" style="width: 50%; height: 250px;"></div>
+                  </div>
+                  <p class = "discription opacity_wrapper">Среди языков первенство имеют Турецкий язык и диалекты меньшинств(Карманджи и Зазаки). Далее занимают языки других самых многочисленных народов Турции(Кабардинский и Арабский). 
+                    Безусловное превосходство в религии занимает Ислам. Установление ислама на территории современной Турции завершилось ко второй половине XI в., когда турки-сельджуки совершили экспансию в Восточной Анатолии(Восточные регионы Турции). Далее важная составляющея этноса - гимн!</p>
+            </div>
+            <iframe frameborder="0" class = "opacity_wrapper" style="border:none;width:100%;max-height:210px;" width="100%" height="210px" src="https://music.yandex.ru/iframe/track/787276/87715">Слушайте <a href='https://music.yandex.ru/album/87715/track/787276'>Государственный гимн Турции</a> — <a href='https://music.yandex.ru/artist/255177'>Гимны</a> на Яндекс Музыке</iframe>
+
+            <h3 class = "section-title opacity_wrapper">Официальные языки</h3>
+            <h4 class = "section-value opacity_wrapper">Турецкий</h4>    
+            <p class = "discription opacity_wrapper">Турецкий язык - официальный язык Турции, который входит в тюркскую языковую семью(юго-западная подгруппа)</p>
+
+            <h3 class = "section-title opacity_wrapper">Города миллионики</h3>
+            <p class = "section-value opacity_wrapper">Стамбул, Анкара, Измир, Бурса, Адана, Анталья, Газиантеп.</p>
+
+            <h3 class = "section-title opacity_wrapper">Доля городского населения</h3>
+            <h4 class = "section-value opacity_wrapper">93,2%</h4>
+            <p class = "discription opacity_wrapper"></p>
+
+            <h3 class = "section-title opacity_wrapper">Доля столицы от численности населения</h3>
+            <h4 class = "section-value opacity_wrapper">6,6%</h4>
+            <p class = "discription opacity_wrapper"></p>
+        </div>
+        <!-- Ниже Сербия -->
+        <div class = "Serbia-container">
+            <h2 class = "main-title opacity_wrapper">Сербия</h2>
+
+            <h3 class = "section-title opacity_wrapper">Рождаемость</h3>
+            <h4 class = "section-value opacity_wrapper">242,44 человека в день</h4>
+
+            <h3 class = "section-title opacity_wrapper">Смертность</h3>
+            <h4 class = "section-value opacity_wrapper">299,45 человек в день</h4>
+
+            <h3 class = "section-title opacity_wrapper">Изменение численности населения</h3>
+            <div style="width: 100%; height: 150px;" class = "opacity_wrapper" id = "Serb-born-container"></div>
+
+            <h3 class = "section-title opacity_wrapper">Естественный прирост</h3>
+            <h4 class = "section-value opacity_wrapper"> -20.807 человек</h4>
+            <p class = "discription opacity_wrapper">Отрицательный естественный прирост в Сербии может быть обусловлен, старением населения(Людей старше 65 лет сейчас на ~10% больше, чем молодежи до 15 лет), экономическими трудностями, высокой и нестабильной безработицей(Уровень безработицы в Сербии упал до 9.6 % во втором квартале 2023. Максимальный уровень достигал 25.5 %, а минимальная 7.9 %), недостаточная репродукция населения.</p>
+
+            <h3 class = "section-title opacity_wrapper">Миграционный прирост</h3>
+            <h4 class = "section-value opacity_wrapper">-19.252 человек</h4>
+            <p class = "discription"> Это может быть связано с тем, что высок уровень 
+              безработицы и ограничены экономические перспективы, перспективы обучения за границей выше. Люди уезжают за границу в поиске жизни лчше, чем в Сербии.</p>
+            
+            <h3 class = "section-title opacity_wrapper">Основные направления миграции в страну</h3>
+            <p class = "discription opacity_wrapper">Основные направения: Китай, Россия, Турция, Индия, Македония.В основном из этих стран мигрируют мужчины, что свидетельствует о том, что мигрируе именно трудовое население. Также могут мигрировать туристы, которых привлекают достопримечательности, а также студенты в поимсках обучения.</p>
+
+            <h3 class = "section-title opacity_wrapper">Основные направления миграции из страны</h3>
+            <p class = "discription opacity_wrapper">Основные направления: Австрия, Хорватия, Словения, Чехия.</p>
+            
+            <h3 class = "section-title opacity_wrapper">Население Сербии к 2050 г.</h3>
+            <h4 class = "section-value opacity_wrapper">7,447,025 человек(-13,3%)</h4>
+
+            <h3 class = "section-title opacity_wrapper">Демографическая пирамида</h3>
+            <div id='serbia-age-container' class = "opacity_wrapper" style="width: 100%; height: 250px;"></div>
+            <p class = "discription opacity_wrapper">Население, которому больше 65 лет преобладает над теми, кому меньше 15 лет, что свидетельствует о старении населения. Есть перевес в стороне от 15 до 65, что свидетельствует о преобладании именно трудового населения.</p>
+            
+            <div class = "etnos">
+                <h3 class = "section-title opacity_wrapper">Этнос</h3>
+                <div id="narod_serbia" class = "opacity_wrapper" style="width: 100%; height: 250px;"></div>
+                <p class = "discription opacity_wrapper">Сербы являются крупнейшей этнической группой в Сербии, составляющей 83 % от общей численности населения. Второй по численности этнической группой являются венгры — 3,9 % во всей Сербии</p>
+                <div class = "Serbia-etnos-container">
+                    <div id="language_serbia" class = "opacity_wrapper" style="width: 50%; height: 250px;"></div>
+                    <div id="relig_serbia" class = "opacity_wrapper" style="width: 50%; height: 250px;"></div>
+                </div>
+                <p class = "discription opacity_wrapper">Градация языков повторяет градацию народов Сербии. Значительно преобладает Сербский. Законы Сербии гарантируют свободу вероисповедания. 
+                  Значительно преобладает христианство. Далее важная составляющея этноса - гимн!</p>
+            </div>
+            <iframe frameborder="0" class = "opacity_wrapper" style="border:none;width:100%;height:210px;" width="100%" height="210px" src="https://music.yandex.ru/iframe/track/787257/87715">Слушайте <a href='https://music.yandex.ru/album/87715/track/787257'>Государственный гимн Сербии</a> — <a href='https://music.yandex.ru/artist/255177'>Гимны</a> на Яндекс Музыке</iframe>
+            
+            <h3 class = "section-title opacity_wrapper">Официальные языки</h3>
+            <h4 class = "section-value opacity_wrapper">Сербский</h4>  
+            <p class = "discription opacity_wrapper">Официальным языком страны является сербский на кириллице. Он имеет общегосударственный статус. Наравне с ним на региональном и местном уровнях также официально используются ещё 12 языков[89].</p>
+
+            <h3 class = "section-title opacity_wrapper">Города миллионики</h3>
+            <p class = "section-value opacity_wrapper">Белград</p>
+
+            <h3 class = "section-title opacity_wrapper">Доля городского населения</h3>
+            <h4 class = "section-value opacity_wrapper">61,2%</h4>
+            <p class = "discription opacity_wrapper"></p>
+
+            <h3 class = "section-title opacity_wrapper">Доля столицы от численности населения</h3>
+            <h4 class = "section-value opacity_wrapper">19,5%</h4>
+            <p class = "discription opacity_wrapper"></p>
+        </div>
+        <!-- Ниже анимация-->
+        <script>
+            function addAnimation(entries, observer) {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('section-title-animation');
+                } else {
+                  entry.target.classList.remove('section-title-animation');
+                }
+              });
+            }
+            setTimeout(() => {
+              const titles_elements = document.getElementsByClassName('opacity_wrapper');
+              for (let i = 0; i < titles_elements.length; i++) {
+                const titles_element = titles_elements[i];
+                const observer = new IntersectionObserver(addAnimation, { threshold: 0});
+                observer.observe(titles_element);
+              }
+            }, 6400)
+        </script>
+        <!-- Ниже график религии сербии -->
+        <script>
+        anychart.onDocumentLoad(function () {
+            var chart = anychart.pie();
+            chart.data([
+            ["Христианство", 7944397],
+            ["Ислам", 360719],
+            ["Нерелигиозные и атеисты", 283422]
+            ]);
+            chart.title("Религия в Сербии");
+            chart.container("relig_serbia");
+            chart.draw();
+        });
+        </script>
+        <!-- Ниже график населения сербии -->
+        <script>
+            var chart = anychart.line();
+            chart.title('Прирост населения(в процентах %)');
+            chart.data([
+                {x: '2000', value: -1.02},
+                {x: '2001', value: -0.89},
+                {x: '2002', value: -0.75},
+                {x: '2003', value: -0.63},
+                {x: '2004', value: -0.56},
+                {x: '2005', value: -0.53},
+                {x: '2006', value: -0.52},
+                {x: '2007', value: -0.50},
+                {x: '2008 ', value: -0.47},
+                {x: '2009', value: -0.43},
+                {x: '2010', value: -0.38},
+                {x: '2011', value: -0.33},
+                {x: '2012', value: -0.28},
+                {x: '2013', value: -0.25},
+                {x: '2014', value: -0.23},
+                {x: '2015', value: -0.24},
+                {x: '2016', value: -0.25},
+                {x: '2017', value: -0.27},
+                {x: '2018', value: -0.29},
+                {x: '2019', value: -0.33},
+                {x: '2020', value: -0.37},
+                {x: '2021', value: -0.46},
+                {x: '2022', value: -0.46},
+                {x: '2023', value: -0.46},
+            ]);
+            chart.container("Serb-born-container");
+            anychart.theme(anychart.themes.darkBlue);
+            chart.draw();
+        </script>
+        <!-- Ниже народы сербии -->
+        <script>
+            anychart.onDocumentLoad(function () {
+            var chart = anychart.line();
+            var lineSeries = chart.column([
+            ["Сербы", 5988150],
+            ["Венгры", 253899],
+            ["Цыгане", 147604],
+            ["Бошняки", 145278],
+            ["Хорваты", 57900],
+            ["Словаки", 52750],
+            ["Другие", 541281],
+            ]);
+            chart.title("Народы Сербии(по данным переписи 2011 г.)");
+            chart.container("narod_serbia");
+            chart.draw();
+            anychart.theme(anychart.themes.darkBlue);
+        });
+        </script>
+        <!-- Ниже языки сербии -->
+        <script>
+            anychart.onDocumentLoad(function () {
+            var chart = anychart.pie();
+            chart.data([
+            ["Сербский", 6330919],
+            ["Венгерский", 243146],
+            ["Боснийский", 138871],
+            ["Цыганский", 100668],
+            ["Словацкий", 49796],
+            ["Влашский", 43095],
+            ["Другие", 319830],
+            ]);
+            chart.title("Языки Сербии(по данным переписи 2011 г.)");
+            chart.container("language_serbia");
+            chart.draw();
+        });
+        </script>
+        <!-- Ниже график религии турции -->
+        <script>
+            anychart.onDocumentLoad(function () {
+                var chart = anychart.pie();
+                chart.data([
+                ["Ислам", 88156425],
+                ["Нерелигиозные и атеисты", 1078366],
+                ["Христианство", 449319],
+                ["Другие", 179728]
+                ]);
+                chart.title("Религия в Турции");
+                chart.container("relig_turkish");
+                chart.draw();
+            });
+        </script>
+        <!-- Ниже график населения Турции -->
+        <script>
+                var chart = anychart.line();
+                chart.title('Прирост населения Турции(в процентах %)');
+                chart.data([
+                    {x: '2000', value: 1.54},
+                    {x: '2001', value: 1.52},
+                    {x: '2002', value: 1.49},
+                    {x: '2003', value: 1.47},
+                    {x: '2004', value: 1.42},
+                    {x: '2005', value: 1.36},
+                    {x: '2006', value: 1.29},
+                    {x: '2007', value: 1.23},
+                    {x: '2008 ', value: 1.20},
+                    {x: '2009', value: 1.24},
+                    {x: '2010', value: 1.35},
+                    {x: '2011', value: 1.48},
+                    {x: '2012', value: 1.59},
+                    {x: '2013', value: 1.68},
+                    {x: '2014', value: 1.71},
+                    {x: '2015', value: 1.70},
+                    {x: '2016', value: 1.67},
+                    {x: '2017', value: 1.64},
+                    {x: '2018', value: 1.56},
+                    {x: '2019', value: 1.41},
+                    {x: '2020', value: 1.20},
+                    {x: '2021', value: 1.68},
+                    {x: '2022', value: 1.68},
+                    {x: '2023', value: 1.68},
+                ]);
+                anychart.theme(anychart.themes.darkBlue);
+                chart.container("turkish-born-container");
+                chart.draw();
+        </script>
+        <!-- Ниже народы Турции -->
+        <script>
+                anychart.onDocumentLoad(function () {
+                var chart = anychart.line();
+                var lineSeries = chart.column([
+                ["Турки", 53385000],
+                ["Курды", 15331000],
+                ["Черкесы", 3000000],
+                ["Арабы", 1774000],
+                ["Азербайджанцы", 546000],
+                ["Лазы", 94000],
+                ["Другие",  67000],
+                ]);
+                chart.title("Народы Турции");
+                chart.container("narod_turkish");
+                chart.draw();
+            });
+        </script>
+        <!-- Ниже языки Турции -->
+        <script>
+                anychart.onDocumentLoad(function () {
+                var chart = anychart.pie();
+                chart.data([
+                ["Турецкий", 60000000],
+                ["Курманджи", 8000000],
+                ["Зазаки", 3000000],
+                ["Кабардинский", 3000000],
+                ["Арабский", 3000000],
+                ["Другое", 7780000]
+                ]);
+                chart.title("Языки Турции");
+                chart.container("language_turkish");
+                chart.draw();
+            });
+        </script>
+        <!-- Ниже график возраста Турции-->
+        <script>
+            anychart.onDocumentReady(function () {
+            // create data set on our data
+            var dataSet = anychart.data.set([
+              ['Человек меньше 15 лет', 12188651, 11641592],
+              ['Человек старше 14 и младше 65 лет',  30439790,  29781526],
+              ['Человек старше 64 лет', 2572074, 3059046],
+            ]);
+
+            // map data for the first series, take x from the zero column and value from the first column of data set
+            var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
+
+            // map data for the second series, take x from the zero column and value from the second column of data set
+            var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
+
+            // create bar chart
+            var chart = anychart.bar();
+
+            // turn on chart animation
+            chart.animation(true);
+
+            chart.padding([10, 40, 5, 20]);
+
+            // set chart title text settings
+            chart.title('Демографическая пирамида Турции');
+
+          // set scale minimum
+          chart.yScale().minimum(0);
+
+          // force chart to stack values by Y scale.
+          chart.yScale().stackMode('value');
+          chart.yAxis().labels().format('{%Value}{groupsSeparator: }');
+
+          // set titles for axises
+          chart.xAxis().title('Возраст');
+          chart.yAxis().title('Человек');
+
+            // helper function to setup label settings for all series
+            var setupSeries = function (series, name) {
+              series.name(name);
+              series.stroke('3 #fff 1');
+              series.hovered().stroke('3 #fff 1');
+            };
+
+            // temp variable to store series instance
+            var series;
+
+            // create first series with mapped data
+            series = chart.bar(firstSeriesData);
+            setupSeries(series, 'Мужчины');
+
+            // create second series with mapped data
+            series = chart.bar(secondSeriesData);
+            setupSeries(series, 'Женщины');
+
+            // turn on legend
+            chart.legend().enabled(true).fontSize(13).padding([0, 0, 20, 0]);
+
+            chart.interactivity().hoverMode('by-x');
+            chart.tooltip().valuePrefix('').displayMode('union');
+
+            // set container id for the chart
+            chart.container('turkish-age-container');
+            // initiate chart drawing
+            chart.draw();
+          });
+        </script>
+        <!-- Ниже график возраста Сербии-->
+        <script>
+          anychart.onDocumentReady(function () {
+          // create data set on our data
+          var dataSet = anychart.data.set([
+            ['Человек меньше 15 лет', 667359, 626025],
+            ['Человек старше 14 и младше 65 лет',  2942791,  2939783],
+            ['Человек старше 64 лет', 580051, 837335],
+          ]);
+
+          // map data for the first series, take x from the zero column and value from the first column of data set
+          var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
+
+          // map data for the second series, take x from the zero column and value from the second column of data set
+          var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
+
+          // create bar chart
+          var chart = anychart.bar();
+
+          // turn on chart animation
+          chart.animation(true);
+
+          chart.padding([10, 40, 5, 20]);
+
+          // set chart title text settings
+          chart.title('Демографическая пирамида Сербии');
+
+          // set scale minimum
+          chart.yScale().minimum(0);
+
+          // force chart to stack values by Y scale.
+          chart.yScale().stackMode('value');
+          chart.yAxis().labels().format('{%Value}{groupsSeparator: }');
+
+          // set titles for axises
+          chart.xAxis().title('Возраст');
+          chart.yAxis().title('Человек');
+
+          // helper function to setup label settings for all series
+          var setupSeries = function (series, name) {
+            series.name(name);
+            series.stroke('3 #fff 1');
+            series.hovered().stroke('3 #fff 1');
+          };
+
+          // temp variable to store series instance
+          var series;
+
+          // create first series with mapped data
+          series = chart.bar(firstSeriesData);
+          setupSeries(series, 'Мужчины');
+
+          // create second series with mapped data
+          series = chart.bar(secondSeriesData);
+          setupSeries(series, 'Женщины');
+
+          // turn on legend
+          chart.legend().enabled(true).fontSize(13).padding([0, 0, 20, 0]);
+
+          chart.interactivity().hoverMode('by-x');
+          chart.tooltip().valuePrefix('').displayMode('union');
+
+          // set container id for the chart
+          chart.container('serbia-age-container');
+          // initiate chart drawing
+          chart.draw();
+        });
+      </script>
+    </main>
+    <footer>
+      <h2 class = "foot-title opacity_wrapper">Источники</h2>
+      <p class = "discription opacity_wrapper">Данные по основным показателям, а также религии из <a href="https://countrymeters.info/" target="_blank">CountryMeters</a></p>
+      <p class = "discription opacity_wrapper">Графики построены с помощью <a href="https://anychart.com/" target="_blank">AnyChart</a></p>
+      <p class = "discription opacity_wrapper">Данные о будущем населении <a href="https://www.worldometers.info/population/most-populous-countries/" target="_blank">WorldMeters</a></p>
+      <p class = "discription opacity_wrapper">Подробная информация о показателях найдена на <a href="https://ru.wikipedia.org/" target="_blank">Wikipedia</a></p>
+      <p class = "discription opacity_wrapper">Великая технология -  <a href="https://chat.openai.com/" target="_blank">ChatGPT</a></p>
+      <p class = "discription opacity_wrapper">Данные миграции и эмиграции Сербии <a href="https://kirs.gov.rs/" target="_blank">STAT RS 2020</a></p>
+      <p class = "discription opacity_wrapper">Данные эмиграции Турции <a href="https://cyberleninka.ru/" target="_blank">Cyberleninka</a></p>
+      <p class = "discription opacity_wrapper">Данные миграции Турции <a href="https://ru.goc.gov.tr/" target="_blank">Министерство внутренних дел Турции</a></p>
+      <p class = "discription opacity_wrapper">И многое другое...</p>
+      <h2 class = "foot-title opacity_wrapper">Спасибо, что посмотрели сайт и делаете так много для нашего обучения!</h2>
+    </footer>
+</body>
+</html>

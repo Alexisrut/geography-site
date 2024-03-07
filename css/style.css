@@ -1,0 +1,301 @@
+body {
+    background-color: #041436;
+}
+
+html,
+body,
+#turkish-age-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.preloader1 {
+    /* Стили для вашей заставки */
+    background-color: #041436;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preloader2 {
+    /* Стили для вашей заставки */
+    background-color: #041436;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preloader3 {
+    /* Стили для вашей заставки */
+    background-color: #041436;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes background_animation {
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes preloader-animation {
+    0% {
+        opacity : 0;
+    }
+    50% {
+        opacity : 1;
+    }
+    100% {
+        opacity : 0;
+    }
+}
+
+.preloader-animation {
+    animation-name: background_animation;
+    animation-duration: 1s;
+}
+
+.preloader-text1 {
+    color: rgb(201,165,29);
+    font-family: Montserrat;
+    font-size: 80px;
+    opacity: 0;
+    font-style: normal;
+    text-align: center;
+    font-weight: 900;
+    line-height: 138%;
+    animation-name: preloader-animation;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+}
+
+.preloader-text2 {
+    color: rgb(201,165,29);
+    font-family: Montserrat;
+    font-size: 80px;
+    opacity: 0;
+    font-style: normal;
+    text-align: center;
+    font-weight: 900;
+    line-height: 138%;
+    animation-name: preloader-animation;
+    animation-timing-function: ease-out;
+    animation-duration: 2.4s;
+    animation-delay: 1.4s;
+}
+
+.preloader-text3 {
+    color: rgb(201,165,29);
+    font-family: Montserrat;
+    font-size: 80px;
+    opacity: 0;
+    font-style: normal;
+    text-align: center;
+    font-weight: 900;
+    line-height: 138%;
+    animation-name: preloader-animation;
+    animation-timing-function: ease-out;
+    animation-duration: 2.4s;
+    animation-delay: 3.8s;
+}
+
+@keyframes graphic-enter {
+    0% {
+        transform: scale(0, .025);
+    }
+    50% {
+        transform: scale(1, .025);
+    }
+}
+
+@keyframes wipe-enter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.section-title-wrapper {
+    height: 28px;
+}
+
+
+.animation-start {
+    animation: wipe-enter 3s;
+    animation-delay: 1s; /* Delay the animation start */
+}
+
+.graphic-animation {
+    animation-name: graphic-enter;
+    animation-duration: 1s;
+}
+
+.section-value-animation, .section-title-animation, .discription-animation {
+    animation-name: wipe-enter;
+    animation-duration: 1.2s;
+}
+
+.header_container {
+    background-position: center center;
+    background-image: url(../img/flags.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(163, 193, 53);
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    animation-name: background_animation;
+    animation-duration: 1.2s; 
+    animation-delay: 5900ms;
+    animation-timing-function: ease-in;
+}
+
+
+.header_title {
+    color: rgb(201,165,29);
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 800;
+    line-height: 138%;
+}
+
+.header_subtitle {
+    color: #B59000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 138%;
+}
+
+.Serbia-container {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+.Turkey-container {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@keyframes line {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 2110px;
+    }
+}
+
+.vl {
+    border-left: 4px solid rgb(173,4,7);
+    height: 5317px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    animation-name: line;
+    animation-duration: 10s;
+    animation-delay: 4s;
+    animation-timing-function: ease-in;
+}
+.Turkey-etnos-container {
+    display: flex;
+    flex-direction: row;
+}
+.Serbia-etnos-container {
+    display: flex;
+    flex-direction: row;
+}
+#container {
+    width: 500px;
+    height: 250px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+.discription {
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+.section-value {
+    font-family: Montserrat;
+    font-size: 30px;
+    line-height: 66px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #ffffff;
+}
+.main-title {
+    color: #ffcc00;
+    font-family: Montserrat;
+    font-size: 50px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 138%;
+}
+.section-title {
+    color: #ff5900;
+    font-family: Montserrat;
+    font-weight: 650px;
+    font-size: 40px;
+    text-align: center;
+    font-style: normal;
+    line-height: 138%;
+}
+.etnos {
+    display: flex;
+    flex-direction: column;
+}
+.turkish-migration-increase-in-container {
+    background-image: url(../img/09_guncel_ENG_Istatistik.jpg);
+    height: 325px;
+    width: 100%;
+    background-size: cover;
+}
+
+.foot-title {
+    color: #ffcc00;
+    font-family: Montserrat;
+    font-size: 50px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 138%;
+}
+
+a {
+    text-decoration: none;
+    color: #ff5900;
+}
